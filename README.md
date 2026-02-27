@@ -8,7 +8,7 @@ You are joining the data team at **Venatus**, a programmatic advertising company
 2. Create a dashboard in **Lightdash** to surface key business insights.
 3. Investigate the data and document what you find.
 
-This exercise is designed to assess the core skills of an [analytics engineer](https://www.getdbt.com/blog/what-is-analytics-engineering): data modeling, transformation, testing, documentation, and communicating with data.
+This exercise is designed to assess the core skills of an analytics engineer: data modeling, transformation, testing, documentation, and communicating with data.
 
 ---
 
@@ -53,6 +53,8 @@ SELECT * FROM raw.publishers LIMIT 5;
 SELECT * FROM raw.campaigns  LIMIT 5;
 SELECT * FROM raw.ad_units   LIMIT 5;
 ```
+
+You could also connect [https://dbeaver.io/](DBeaver) to Clickhouse to use a UI database manager.
 
 ### 3. Start building
 
@@ -152,7 +154,6 @@ Connect your dbt project to Lightdash and build a dashboard that answers these b
 2. **Fill Rate Analysis** — What is the fill rate by publisher? Any publishers that stand out?
 3. **One insight of your choice** — What else is interesting or concerning in this data?
 
-> If you are unable to connect Lightdash to your warehouse, provide screenshots of equivalent analysis run directly in ClickHouse or your preferred SQL client. The modelling and analysis matters more than the tool.
 
 ### Part 3: Design Document (15%)
 
@@ -254,5 +255,3 @@ make clean              # Remove all volumes and start fresh
 ```
 
 ---
-
-Good luck — and have fun with it! 🎮
