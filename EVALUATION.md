@@ -87,15 +87,15 @@ The seed data contains **8 intentional issues**. Score based on how many the can
 
 ## AI / LLM Detection Signals
 
-The following signals may indicate heavy AI assistance. **None are disqualifying on their own** — the video walkthrough is the primary verification method.
+The following signals may indicate heavy AI assistance. **None are disqualifying on their own** — the walkthrough is the primary verification method.
 
 ### Strong Signals
 - **Single large commit** with all code — suggests generated-then-committed rather than iteratively developed
-- **Video walkthrough missing or evasive** — cannot explain decisions or navigate their own code fluently
+- **Walkthrough missing or evasive** — cannot explain decisions or navigate their own code fluently
 - **Perfect but generic documentation** — describes concepts accurately but doesn't reference the actual data (e.g., describes deduplication strategy but doesn't mention the specific `_loaded_at` pattern)
 - **Missed the bot traffic pattern** — AI tends to handle mechanical issues (dedup, nulls) but misses statistical anomalies that require actually querying the data
 - **Over-engineered for the timeframe** — incremental models, complex macros, snapshot tables for every dimension in a 2–4 hour exercise suggests AI scaffolding
-- **Inconsistent depth** — perfect model code but can't explain modelling decisions in the video
+- **Inconsistent depth** — perfect model code but can't explain modelling decisions in the walkthrough
 
 ### Moderate Signals
 - **Boilerplate-heavy DESIGN.md** — reads like a textbook rather than reflecting personal decisions
@@ -106,7 +106,7 @@ The following signals may indicate heavy AI assistance. **None are disqualifying
 ### Assessment Protocol
 1. **Review commit history first** — look for natural development progression
 2. **Read DESIGN.md** — does it reference specific findings from the data, or speak in generalities?
-3. **Watch the video** — this is the strongest signal. Can they:
+3. **Ask Questions** — this is the strongest signal. Can they:
    - Navigate their own code without reading it for the first time?
    - Explain *why* they chose specific materialisation strategies?
    - Walk through a query they wrote to investigate a data quality issue?
