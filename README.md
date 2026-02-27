@@ -34,7 +34,7 @@ Everything runs in Docker. One command to start.
 ### 1. Clone and start
 
 ```bash
-git clone <this-repo-url>
+git clone git@github.com:Venatus/analytics-coding-challenge.git
 cd analytics-coding-challenge
 make up
 ```
@@ -54,7 +54,7 @@ SELECT * FROM raw.campaigns  LIMIT 5;
 SELECT * FROM raw.ad_units   LIMIT 5;
 ```
 
-You could also connect [https://dbeaver.io/](DBeaver) to Clickhouse to use a UI database manager.
+You could also connect [DBeaver](https://dbeaver.io) to Clickhouse to use a UI database manager.
 
 ### 3. Start building
 
